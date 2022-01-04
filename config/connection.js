@@ -19,5 +19,5 @@ if (process.env.JAWSDB_URL) {
   );
 }
 app.get('/', (req, res) =>
-res.render("homepage")
+res.render("homepage"))
 module.exports = sequelize;
