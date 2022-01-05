@@ -7,8 +7,7 @@ if (process.env.NODE_ENV === "production") {
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME ||
-    process.env.DB_Password
-    "",
+    process.env.DB_Password,
     {
       host: process.env.PSQL_HOST || "localhost",
    
