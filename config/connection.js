@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === "production") {
     process.env.DB_NAME ||
     process.env.DB_Password,
     {
-      host: process.env.PSQL_HOST || "localhost",
+      host: process.env.HOST || "localhost",
    
     }
   );
