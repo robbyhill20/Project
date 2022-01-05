@@ -9,8 +9,9 @@ if (process.env.NODE_ENV === "production") {
     process.env.DB_NAME ||
     process.env.DB_Password,
     {
-      host: process.env.HOST || "localhost",
-      dialect: "mysql",
+     host: process.env.HOST ||'localhost',
+      dialect: 'mysql',
+      port: process.env.PORT || 3000
     }
   );
 }
